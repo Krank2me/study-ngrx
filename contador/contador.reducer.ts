@@ -1,6 +1,6 @@
 import { Action } from "../ngrx-fake/ngrx";
 
-export function reducer(state = 10, action: Action) {
+export function contadorReducer(state = 10, action: Action) {
 
   switch(action.type) {
     case 'INCREMENTAR':

@@ -1,5 +1,5 @@
 import { Action } from "./ngrx-fake/ngrx";
-import { reducer } from './contador/contador.reducer'
+import { contadorReducer } from './contador/contador.reducer'
 import {
   decrementadorAction,
   dividirAction,
@@ -11,8 +11,8 @@ import {
 
 
 
-console.log(reducer(10, incrementadorAction));
-console.log(reducer(10, decrementadorAction));
-console.log(reducer(10, multiplicarAction));
-console.log(reducer(10, dividirAction));
-console.log(reducer(10, resetAction));
+console.log(contadorReducer(10, incrementadorAction));
+console.log(contadorReducer(10, decrementadorAction));
+console.log(contadorReducer(10, multiplicarAction));
+console.log(contadorReducer(10, dividirAction));
+console.log(contadorReducer(10, resetAction));
